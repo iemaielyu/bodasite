@@ -1,0 +1,218 @@
+html, body{
+    background-color: #D05A2F;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #F9F3EA;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Divide la página en bloques */
+.section-full {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-alt {
+    background-color: #f9f3ea11; /* color muy tenue */
+    border-top: 1px solid #d9c6b0;
+  }
+
+/* Contador y slider de imagénes*/
+.image-stack {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+}
+
+.bienvenida-img {
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    animation-fill-mode: forwards;
+}
+
+/* Posiciones más compactas */
+.bienvenida-img:nth-child(1) {
+    top: 0; left: 10px;
+animation: fadeInMove 1s ease forwards 0.5s;
+}
+.bienvenida-img:nth-child(2) {
+    top: 20px; left: 50px;
+    animation: fadeInMove 1s ease forwards 1.5s;
+}
+.bienvenida-img:nth-child(3) {
+    top: 40px; left: 90px;
+    animation: fadeInMove 1s ease forwards 2.5s;
+}
+
+@keyframes fadeInMove {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+}
+} 
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .countdown-container {
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: #5e2129;
+    text-align: center;
+    white-space: nowrap;
+    margin-left: 50%;
+    margin-top: 4%;
+  }
+  
+  .countdown-time {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .time-segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-label {
+    font-weight: 500;
+    font-size: 8rem;
+  }
+  
+  .label {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+.slider-container {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.slider-track {
+    display: flex;
+    animation: slide 50s linear infinite;
+}
+
+.slider-track img {
+    width: 22%;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 0;
+}
+
+@keyframes slide {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/*Encabezado*/
+.display-4{
+    font-size: 8rem;
+}
+.lead{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.mb-0{
+    font-size: 1.5rem;
+}
+
+.title{
+    text-align: center;
+}
+
+/*Mapa*/
+
+.mapa-text{
+    font-size: 1.5rem;
+}
+
+.map-responsive {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+.btn{
+    background-color: #5e2129;
+    border: none;
+    color: #F9F3EA;
+    border-radius: 3rem;
+    width: 10%;
+    margin-left: 46%;
+}
+
+.btn:hover {
+    background-color: #bb3e03;  
+    color: #F9F3EA;              
+    transition: all 0.3s ease; 
+}
+
+/*RSVP*/
+
+.rsvp-icon{
+    margin-top: -20%;
+}
+
+.form-label{
+    border-radius: 3rem;
+    font-size: 1.5rem;
+
+}
+
+.form-control{
+    width: 500px;
+}
+
+.btn-success{
+    width: 40%;
+    margin-left: -2%;
+}
+
+/*Vestuario*/
+
+.vestuario-icon{
+    height: auto;
+    margin-top: -15%;
+}
+
+.footer-text{
+    color: #F9F3EA;
+    margin-top: -3%;
+}
+.ubicacion-icon, .rsvp-icon, .registro-icon, .musica-icon{
+    width: 8%;
+    margin-left: 46%;
+}
+
+.footer-icon, .audio-icon, .suit, .dress, .name-icon{
+    width: 8%;   
+}
+
+.footer-icon{
+    margin-bottom: 2%;
+}

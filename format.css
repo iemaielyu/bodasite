@@ -31,11 +31,13 @@ overflow: hidden;
 }
 
 .borde {
-position: absolute;
-top: 0;
-width: 25vh;
-z-index: 1;
+position: fixed;
+top: -2%;
+bottom: 0;
+width: 13vh;
+z-index: -0;
 opacity: 0.2;
+pointer-events: none;
 }
 
 .borde-izquierdo {
@@ -44,7 +46,6 @@ left: 0;
 
 .borde-derecho {
 right: 0;
-transform: scaleX(-1); /* Voltear horizontalmente si quieres que se vea simétrico */
 }
 
 .contenido {

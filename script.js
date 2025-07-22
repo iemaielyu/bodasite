@@ -30,3 +30,17 @@
     }, 3500); // Coincide con el tiempo de aparición de las imágenes
   });
 
+  document.addEventListener('DOMContentLoaded', function () {
+    const audio = document.getElementById('audioFondo');
+    audio.volume = 0.1; // 🎧 volumen bajo por defecto
+
+    function iniciarMusica() {
+      audio.play().catch(function (error) {
+        console.log('Autoplay bloqueado:', error);
+      });
+
+      document.removeEventListener('click', iniciarMusica);
+    }
+
+    document.addEventListener('click', iniciarMusica);
+  });

@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Boda Carranza Jiménez</title>
-<!-- Bootstrap 5 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="format.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"></head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boda Carranza Jiménez</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="format.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
 
 <body>
 
-<div class="d-flex gap-3">
-  
-</div>
+  <!-- Sección con bordes decorativos -->
+  <div class="decorated-section position-relative">
+    <img src="Fotos/talavera1.png" alt="Decoración izquierda" class="borde borde-izquierdo position-absolute start-0 top-0 h-100">
+    <img src="Fotos/talavera1.png" alt="Decoración derecha" class="borde borde-derecho position-absolute end-0 top-0 h-100" style="transform: scaleX(-1);">
 
-<section class="vh-100 position-relative d-flex justify-content-center align-items-center flex-column text-center" style="background-color: #D05A2F; color: #F9F3EA;">    
-    <!-- Contenedor para imágenes -->
-    <div class="image-stack position-relative" style="width: 400px; height: 400px;">
-      <img src="Fotos/img11.png" alt="Imagen 1" class="bienvenida-img position-absolute" style="top: 0; left: 50px; opacity: 0; animation: fadeInMove 1s forwards 0.5s;">
-      <img src="Fotos/img12.png" alt="Imagen 2" class="bienvenida-img position-absolute" style="top: 40px; left: 80px; opacity: 0; animation: fadeInMove 1s forwards 1.5s;">
-      <img src="Fotos/img15.png" alt="Imagen 3" class="bienvenida-img position-absolute" style="top: 80px; left: 140px; opacity: 0; animation: fadeInMove 1s forwards 2.5s;">
-      <img src="Fotos/img13.png" alt="Imagen 4" class="bienvenida-img position-absolute" style="top: 0px; left: 140px; opacity: 0; animation: fadeInMove 1s forwards 3.5s;">
-      <img src="Fotos/img14.png" alt="Imagen 5" class="bienvenida-img position-absolute" style="top: 40px; left: 80px; opacity: 0; animation: fadeInMove 1s forwards 4.5s;">
-      <img src="Fotos/img18.png" alt="Imagen 6" class="bienvenida-img position-absolute" style="top: 0px; left: 20px; opacity: 0; animation: fadeInMove 1s forwards 5.5s;">
-    </div>
-  
-<!-- Botón oculto inicialmente -->
-<div class="text-center">
-  <a href="#principal" id="btnEntrar" class="btn btn-light mt-4" style="opacity: 0; pointer-events: none; transition: opacity 1s;">
-    Entrar
-  </a>
-</div>
+    <section class="vh-100 d-flex justify-content-center align-items-center flex-column text-center">
+      
+      <!-- Contenedor para imágenes de bienvenida -->
+      <div class="image-stack position-relative" style="width: 400px; height: 400px;">
+        <img src="Fotos/img11.png" alt="Imagen 1" class="bienvenida-img position-absolute" style="top: 0; left: 50px; opacity: 0; animation: fadeInMove 1s forwards 0.5s;">
+        <img src="Fotos/img12.png" alt="Imagen 2" class="bienvenida-img position-absolute" style="top: 40px; left: 80px; opacity: 0; animation: fadeInMove 1s forwards 1.5s;">
+        <img src="Fotos/img15.png" alt="Imagen 3" class="bienvenida-img position-absolute" style="top: 80px; left: 140px; opacity: 0; animation: fadeInMove 1s forwards 2.5s;">
+        <img src="Fotos/img13.png" alt="Imagen 4" class="bienvenida-img position-absolute" style="top: 0px; left: 140px; opacity: 0; animation: fadeInMove 1s forwards 3.5s;">
+        <img src="Fotos/img14.png" alt="Imagen 5" class="bienvenida-img position-absolute" style="top: 40px; left: 80px; opacity: 0; animation: fadeInMove 1s forwards 4.5s;">
+        <img src="Fotos/img18.png" alt="Imagen 6" class="bienvenida-img position-absolute" style="top: 0px; left: 20px; opacity: 0; animation: fadeInMove 1s forwards 5.5s;">
+      </div>
+
+      <!-- Botón de entrada -->
+      <div class="text-center">
+        <a href="#principal" id="btnEntrar" class="btn btn-light mt-4" style="opacity: 0; pointer-events: none; transition: opacity 1s;">
+          Entrar
+        </a>
+      </div>
+
+    </section>
+  </div>
+
 
 </section>
         <!-- Contenedor del slider con posición relativa -->

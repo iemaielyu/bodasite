@@ -1,13 +1,13 @@
 html, body{
-    background-color: #D05A2F;
-    font-family: "Cormorant Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    color: #F9F3EA;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+background-color: #D05A2F;
+font-family: "Cormorant Garamond", serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal;
+color: #F9F3EA;
+overflow-x: hidden;
+margin: 0;
+padding: 0;
 }
 
 html {
@@ -22,10 +22,36 @@ flex-direction: column;
 justify-content: center;
 }
 
-.banner, .banner1{
-width: 50%;
-margin-top: -8%;
+.decorated-section {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+
+.borde {
+position: absolute;
+top: 0;
+width: 25vh;
+z-index: 1;
 opacity: 0.2;
+}
+
+.borde-izquierdo {
+left: 0;
+}
+
+.borde-derecho {
+right: 0;
+transform: scaleX(-1); /* Voltear horizontalmente si quieres que se vea simétrico */
+}
+
+.contenido {
+position: relative;
+z-index: 2;
+max-width: 800px;
+text-align: center;
 }
 
 /* Divide la página en bloques */
@@ -42,7 +68,6 @@ position: relative;
 width: 100%;
 height: 100%;
 margin-bottom: 10%;
-margin-top: 0%;
 }
 
 .bienvenida-img {
@@ -70,12 +95,12 @@ animation: fadeInMove 1s ease forwards 2.5s;
 
 @keyframes fadeInMove {
 to {
-    opacity: 1;
-    transform: translateY(0);
+opacity: 1;
+transform: translateY(0);
 }
 from {
-    opacity: 0;
-    transform: translateY(20px);
+opacity: 0;
+transform: translateY(20px);
 }
 } 
 
@@ -186,8 +211,8 @@ border-radius: 3rem;
 }
 
 .btn-primary{
-    width: 15vh;
-    margin-left: 90vh;
+width: 15vh;
+margin-left: 90vh;
 }
 
 .btn:hover {
@@ -198,6 +223,7 @@ transition: all 0.3s ease;
 
 .btn-light{
 width: 100px;
+margin-top: 20%;
 }
 
 /*RSVP*/
@@ -236,12 +262,12 @@ margin-left: -8%;
 /*Registro*/
 
 .registro-icon{
-    margin-bottom: 1.5vh;
+margin-bottom: 1.5vh;
 }
 
 a{
-    text-decoration: none;
-    color: inherit;
+text-decoration: none;
+color: inherit;
 }
 
 /*Footer*/
@@ -273,20 +299,20 @@ opacity: 0.2;
 
 @media (max-height: 600px) {
 .vh-100 {
-    min-height: 100vh;
-    height: auto !important;
+min-height: 100vh;
+height: auto !important;
 }
 
-    .name {
-        margin-top: -12%;
-    }
+.name {
+    margin-top: -12%;
+}
 
-    .image-stack{
-        margin-top: -120%;
-        width: 30vh;
-        height: 30vh;
-        margin-left: -42%;
+.image-stack{
+    margin-top: -120%;
+    width: 30vh;
+    height: 30vh;
+    margin-left: -42%;
 
-    }
+}
 }
 

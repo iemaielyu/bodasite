@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Boda Carranza Jiménez</title>
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="format.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"></head>
+
+<body>
+
+<div class="d-flex gap-3">
+  
+</div>
+
+<section class="vh-100 position-relative d-flex justify-content-center align-items-center flex-column text-center" style="background-color: #D05A2F; color: #F9F3EA;">    
+    <!-- Contenedor para imágenes -->
+    <div class="image-stack position-relative" style="width: 400px; height: 400px;">
+      <img src="Fotos/img11.png" alt="Imagen 1" class="bienvenida-img position-absolute" style="top: 0; left: 50px; opacity: 0; animation: fadeInMove 1s forwards 0.5s;">
+      <img src="Fotos/img12.png" alt="Imagen 2" class="bienvenida-img position-absolute" style="top: 40px; left: 80px; opacity: 0; animation: fadeInMove 1s forwards 1.5s;">
+      <img src="Fotos/img15.png" alt="Imagen 3" class="bienvenida-img position-absolute" style="top: 80px; left: 140px; opacity: 0; animation: fadeInMove 1s forwards 2.5s;">
+      <img src="Fotos/img13.png" alt="Imagen 4" class="bienvenida-img position-absolute" style="top: 0px; left: 140px; opacity: 0; animation: fadeInMove 1s forwards 3.5s;">
+      <img src="Fotos/img14.png" alt="Imagen 5" class="bienvenida-img position-absolute" style="top: 40px; left: 80px; opacity: 0; animation: fadeInMove 1s forwards 4.5s;">
+      <img src="Fotos/img18.png" alt="Imagen 6" class="bienvenida-img position-absolute" style="top: 0px; left: 20px; opacity: 0; animation: fadeInMove 1s forwards 5.5s;">
+    </div>
+  
+<!-- Botón oculto inicialmente -->
+<div class="text-center">
+  <a href="#principal" id="btnEntrar" class="btn btn-light mt-4" style="opacity: 0; pointer-events: none; transition: opacity 1s;">
+    Entrar
+  </a>
+</div>
+
+</section>
+        <!-- Contenedor del slider con posición relativa -->
+<div class="container-fluid section-full section-alt text-center" id="principal">        
+    <div class="slider-wrapper position-relative">
+
+        <!-- Tu contador (centrado y por encima) -->
+        <div class="countdown-container">
+        <div id="countdown">
+            <div class="countdown-time d-flex justify-content-center flex-wrap">
+            <div class="time-segment">
+                <span id="days" class="main-label">00</span>
+                <span class="label">Días</span> 
+            </div>
+            <div class="time-segment">
+                <span id="hours" class="main-label">00</span>
+                <span class="label">Horas</span>
+            </div>
+            <div class="time-segment">
+                <span id="minutes" class="main-label">00</span>
+                <span class="label">Minutos</span>
+            </div>
+            <div class="time-segment">
+                <span id="seconds" class="main-label">00</span>
+                <span class="label">Segundos</span>
+            </div>
+            </div>
+        </div>
+        </div>
+  
+    <!-- Tu slider debajo -->
+      <!-- Slider -->
+      <div class="slider-track d-flex flex-nowrap">
+        <img class="photo-slider img-fluid" src="Fotos/img1.png" alt="Foto 1">
+        <img class="photo-slider img-fluid" src="Fotos/img2.png" alt="Foto 2">
+        <img class="photo-slider img-fluid" src="Fotos/img3.png" alt="Foto 3">
+        <img class="photo-slider img-fluid" src="Fotos/img4.png" alt="Foto 4">
+        <img class="photo-slider img-fluid" src="Fotos/img5.png" alt="Foto 5">
+        <img class="photo-slider img-fluid" src="Fotos/img6.png" alt="Foto 6">
+        <img class="photo-slider img-fluid" src="Fotos/img7.png" alt="Foto 7">
+        <img class="photo-slider img-fluid" src="Fotos/img8.png" alt="Foto 8">
+        <img class="photo-slider img-fluid" src="Fotos/img9.png" alt="Foto 9">
+        <img class="photo-slider img-fluid" src="Fotos/img10.png" alt="Foto 10">
+      </div>
+    </div>
+    <div class="container py-5">
+    
+      <!-- Encabezado -->
+          
+          <img class="name img-fluid" src="Fotos/nombres beige.png" alt="nombres">
+          <p class="mb-0">¡Nos casamos! <br>
+          Viernes 31 de Octubre 2025 - 5:00 p.m.</p>
+          <img class="name-icon img-fluid" src="Fotos/wedding-ring.png" alt="Anillo">
+    </div>
+    
+      <!-- Mapa -->
+      <div class="container-fluid section-full section-alt text-center">
+        <img class="ubicacion-icon img-fluid" src="Fotos/placeholder.png" alt="Ubicación">
+        <h3 class="title">Ubicación</h3>
+        <p class="mapa-text">Club Majadas, salón 1 y 2 - 27 avenida 6-40, zona 11</p>
+        <p class="mapa-text">Parqueo en Majadas Once, precio por hora Q</p>
+        <div class="map-responsive ratio ratio-4x3 mx-auto">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.6334268578526!2d-90.5626822897068!3d14.619946276544594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a1ac4a4e8949%3A0xc08daa26fa8794a6!2sClub%20Majadas!5e0!3m2!1sen!2sgt!4v1752887139113!5m2!1sen!2sgt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a href="https://waze.com/ul?ll=14.619,-90.561&navigate=yes" target="_blank" class="btn btn-primary mt-3">Abrir en Waze</a>
+      </div>
+    
+      <!-- RSVP -->
+      <div class="container-fluid section-full section-alt text-center">
+        <img class="rsvp-icon img-fluid" src="Fotos/rsvp.png" alt="RSVP">
+        <h3 class="title">Confirma tu asistencia</h3>
+        <p class="rsvp-text">Por favor confirma tu asistencia antes del 15 de agosto de 2025, así podemos organizarnos mejor.<br>
+          ¡Gracias!</p>
+        <form class="mx-auto w-100" style="max-width: 500px;">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Número de Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" placeholder="Número de teléfono" pattern="[0-9]{8}" maxlength="8" required>
+          </div>
+          <div class="mb-3">
+            <label for="asistencia" class="form-label">¿Asistirás?</label>
+            <select class="form-select" id="asistencia" required>
+              <option value="">Selecciona una opción</option>
+              <option value="Sí">Sí, asistiré</option>
+              <option value="No">No podré asistir</option>
+            </select>
+          </div>       
+          <button type="submit" class="btn btn-success">Enviar confirmación</button>
+        </form>
+      </div>
+    
+      <!-- Vestuario -->
+      <div class="container-fluid section-full section-alt text-center full-height">
+        <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
+            <img class="vestuario-icon img-fluid suit" src="Fotos/groom-suit.png" alt="Traje">
+            <img class="vestuario-icon img-fluid dress" src="Fotos/wedding-dress.png" alt="Vestido">
+        </div>
+            <h3 class="title mt-3 suggestion">Dress Code: Día de Muertos 🇲🇽</h3>
+            <p class="vestuario-text">Código de vestimenta: formal con un toque creativo. 
+              <br> Será un gusto ver cómo lo interpretas, ¡y las fotos quedarán inolvidables! 
+              <br> Si buscas inspiración, visita nuestro tablero de Pinterest.</p>
+            <div class="ratio ratio-16x9" style="max-width: 600px; margin: 0 auto;">
+                <iframe src="https://petracoding.github.io/pinterest/board.html?link=iemaielyu/sugerencias-de-vestuario/&hideHeader=0&hideFooter=0&transparent=0"></iframe>
+              </div>
+        </div>
+    
+      <!-- Registro -->
+      <div class="container-fluid section-full section-alt text-center full-height">
+        <img class="registro-icon img-fluid" src="Fotos/gifts.png" alt="Regalos">
+        <h3 class="title">Registro de boda</h3>
+        <a href="">Ingresa a nuestra lista</a>
+      </div>
+    
+      <!-- Música -->
+      <div class="container-fluid section-full section-alt text-center full-height">
+        <img class="musica-icon img-fluid" src="Fotos/music-note.png" alt="Música">
+        <h3 class="title">Sugiérenos una canción</h3>
+        <a href="">Ayúdanos creando la playlist perfecta</a>
+      </div>
+
+    <div class="audio-wrapper text-center mt-3">
+        <img class="audio-icon img-fluid" src="Fotos/turntable.png">
+        <p class="audio-label">Música de fondo</p>
+        <audio controls autoplay loop class="custom-audio">
+          <source src="" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-muted mt-5">
+        <p class="footer-text">Con cariño, <img class="name2 img-fluid" src="fotos/nombres beige.png" alt="nombres">
+        </p>
+        <img class="footer-icon img-fluid" src="Fotos/just-married.png" alt="Footer Icon">
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+    

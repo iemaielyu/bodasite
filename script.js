@@ -1,24 +1,29 @@
-  window.onload = function() {
-    iniciarSlider();
-  };
+document.addEventListener('DOMContentLoaded', () => {
+  const imgs = [
+    ...document.querySelectorAll('.image-stack img'),
+    ...document.querySelectorAll('#principal .photo-slider')
+  ];
 
-  function iniciarSlider() {
-    // Aquí pones la lógica para iniciar el slider
-    console.log("¡Todas las imágenes están listas!");
-    // slider.start(); o la función de tu librería
-  }
-
-  const targetDate = new Date("2025-10-31T00:00:00").getTime();
-
-  const countdown = setInterval(() => {
-    const now = new Date().getTime();
-    const distance = targetDate - now;
-
-    if (distance <= 0) {
-      clearInterval(countdown);
-      document.getElementById("countdown").innerHTML = "¡Es el gran día!";
-      return;
+  const loadingPromises = imgs.map(img => {
+    if (img.complete && img.naturalHeight !== 0) {
+      return Promise.resolve();
     }
+    return new Promise(resolve => {
+      img.addEventListener('load', resolve, { once: true });
+      img.addEventListener('error', resolve, { once: true });
+    });
+  });
+
+  Promise.all(loadingPromises).then(() => {
+   
+    document.body.classList.add('assets-loaded');
+    const btn = document.getElementById('btnEntrar');
+    if (btn) {
+      btn.style.opacity = 1;
+      btn.style.pointerEvents = 'auto';
+    }
+  });
+});
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));

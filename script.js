@@ -1,29 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const imgs = [
-    ...document.querySelectorAll('.image-stack img'),
-    ...document.querySelectorAll('#principal .photo-slider')
-  ];
+/* contador de dias */
+const targetDate = new Date("2025-10-31T00:00:00").getTime();
 
-  const loadingPromises = imgs.map(img => {
-    if (img.complete && img.naturalHeight !== 0) {
-      return Promise.resolve();
-    }
-    return new Promise(resolve => {
-      img.addEventListener('load', resolve, { once: true });
-      img.addEventListener('error', resolve, { once: true });
-    });
-  });
+  const countdown = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
 
-  Promise.all(loadingPromises).then(() => {
-   
-    document.body.classList.add('assets-loaded');
-    const btn = document.getElementById('btnEntrar');
-    if (btn) {
-      btn.style.opacity = 1;
-      btn.style.pointerEvents = 'auto';
+    if (distance <= 0) {
+      clearInterval(countdown);
+      document.getElementById("countdown").innerHTML = "¡Es el gran día!";
+      return;
     }
-  });
-});
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -35,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
     document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
   }, 1000);
+
+/* boton de entrar a la siguiente parte */
 
   window.addEventListener('load', () => {
     setTimeout(() => {

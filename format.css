@@ -213,6 +213,7 @@ border-radius: 3rem;
 .btn-primary{
 width: 15vh;
 margin-left: 88vh;
+background-color: #5e2129;
 }
 
 .btn:hover {
@@ -222,9 +223,10 @@ transition: all 0.3s ease;
 }
 
 .btn-light{
-width: 20vh;
+width: 10vh;
 margin-top: 10%;
 margin-left: -8%;
+background-color: #5e2129;
 }
 
 /*RSVP*/
@@ -246,6 +248,7 @@ width: 500px;
 .btn-success{
 width: 20vh;
 margin-top: 2vh;
+background-color: #5e2129;
 }
 
 /*Vestuario*/

@@ -1,3 +1,12 @@
+  window.onload = function() {
+    iniciarSlider();
+  };
+
+  function iniciarSlider() {
+    // Aquí pones la lógica para iniciar el slider
+    console.log("¡Todas las imágenes están listas!");
+    // slider.start(); o la función de tu librería
+  }
 
   const targetDate = new Date("2025-10-31T00:00:00").getTime();
 

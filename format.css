@@ -182,9 +182,9 @@ font-weight: 300;
 font-size: 1.5rem;
 }
 
-.mb-0, .rsvp-text, .vestuario-text{
+.mb-0, .rsvp-text, .vestuario-text, .mapa-text{
 font-size: 1.5rem;
-line-height: 1.3;
+line-height: 1.2;
 }
 
 .title{
@@ -193,11 +193,6 @@ margin-bottom: 3vh;
 }
 
 /*Mapa*/
-
-.mapa-text{
-font-size: 1.5rem;
-line-height: 0.5;
-}
 
 .map-responsive {
 max-width: 700px;
@@ -274,6 +269,13 @@ text-decoration: none;
 color: inherit;
 }
 
+.img-fluid{
+    width: 70%;
+    position: relative; 
+    z-index: 3;
+
+}
+
 /*Footer*/
 
 .footer-text{
@@ -310,10 +312,23 @@ margin-bottom: 2%;
 opacity: 0.2;
 }
 
-@media (max-height: 600px) {
+@media (max-width: 768px) {
 .vh-100 {
 min-height: 100vh;
 height: auto !important;
+}
+
+.entry{
+    margin-top: 15vh;
+}
+
+.countdown-container{
+    margin-top: 6vh;
+    margin-left: 25vh;
+}
+
+.main-label{
+    font-size: 3rem;
 }
 
 .name {
@@ -321,10 +336,33 @@ height: auto !important;
 }
 
 .image-stack{
-    margin-top: -120%;
     width: 30vh;
     height: 30vh;
     margin-left: -42%;
-
 }
+
+.slider-wrapper{
+    margin-left: -3%;
+    width: 100vh;
+}
+
+.py-5{
+    padding-top: 4rem;
+    padding-bottom: 0;
+}
+
+.ratio{
+    height: 100%;
+}
+
+.name2{
+    width: 13vh;
+}
+
+.mb-0, .rsvp-text, .vestuario-text, .mapa-text{
+    font-size: 1.2rem;
+    margin-left: -5%;
+    margin-right: -5%;
+    }
+
 }

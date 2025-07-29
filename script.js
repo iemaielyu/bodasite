@@ -37,8 +37,7 @@ const targetDate = new Date("2025-10-31T00:00:00").getTime();
       history.replaceState(null, null, ' ');
       window.scrollTo(0, 0);
     }
-  });
-  
+  });  
 
   /*volumen de la cancion de fondo*/
   document.addEventListener('DOMContentLoaded', function () {

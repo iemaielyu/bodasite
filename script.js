@@ -29,9 +29,18 @@ const targetDate = new Date("2025-10-31T00:00:00").getTime();
       const btn = document.getElementById('btnEntrar');
       btn.style.opacity = '1';
       btn.style.pointerEvents = 'auto';
-    }, 3500); // Coincide con el tiempo de aparición de las imágenes
+    }, 5500); // Coincide con el tiempo de aparición de las imágenes
   });
 
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash === "#principal") {
+      history.replaceState(null, null, ' ');
+      window.scrollTo(0, 0);
+    }
+  });
+  
+
+  /*volumen de la cancion de fondo*/
   document.addEventListener('DOMContentLoaded', function () {
     const audio = document.getElementById('audioFondo');
     audio.volume = 0.1; // 🎧 volumen bajo por defecto

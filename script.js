@@ -29,7 +29,7 @@ const targetDate = new Date("2025-10-31T00:00:00").getTime();
       const btn = document.getElementById('btnEntrar');
       btn.style.opacity = '1';
       btn.style.pointerEvents = 'auto';
-    }, 5500); // Coincide con el tiempo de aparición de las imágenes
+    }, 3000); // Coincide con el tiempo de aparición de las imágenes
   });
 
   window.addEventListener('DOMContentLoaded', () => {

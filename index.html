@@ -21,36 +21,34 @@
   <img src="Fotos/talavera1-1.png" class="borde borde-izquierdo fixed-start">
   <img src="Fotos/talavera1-1.png" class="borde borde-derecho fixed-end">
 
-    <section class="vh-100 d-flex justify-content-center align-items-center flex-column text-center">
-      
-      <!-- Contenedor para imágenes de bienvenida -->
-      <div class="image-stack position-relative" style="width: 50vh; height: 50vh;">
-        <img src="Fotos/img11-2.png" alt="Imagen 1" class="bienvenida-img position-absolute" style="top: 0; left: 50px; opacity: 0; animation: fadeInMove 1s forwards 0.5s;">
-        <img src="Fotos/img12-2.png" alt="Imagen 2" class="bienvenida-img position-absolute" style="top: 40px; left: 80px; opacity: 0; animation: fadeInMove 1s forwards 1.5s;">
-        <img src="Fotos/img15-2.png" alt="Imagen 3" class="bienvenida-img position-absolute" style="top: 80px; left: 140px; opacity: 0; animation: fadeInMove 1s forwards 2.5s;">
-        <img src="Fotos/img13-2.png" alt="Imagen 4" class="bienvenida-img position-absolute" style="top: 0px; left: 140px; opacity: 0; animation: fadeInMove 1s forwards 3.5s;">
-        <img src="Fotos/img14-2.png" alt="Imagen 5" class="bienvenida-img position-absolute" style="top: 40px; left: 80px; opacity: 0; animation: fadeInMove 1s forwards 4.5s;">
-        <img src="Fotos/img18-2.png" alt="Imagen 6" class="bienvenida-img position-absolute" style="top: 0px; left: 20px; opacity: 0; animation: fadeInMove 1s forwards 5.5s;">
-      </div>
+ <!-- Bienvenida (antes <section>) -->
+<div class="vh-100 d-flex justify-content-center align-items-center flex-column text-center section-alt">
+  
+  <!-- Contenedor para imágenes de bienvenida -->
+  <div class="image-stack position-relative" style="width: 50vh; height: 50vh;">
+    <img src="Fotos/img11-2.png" alt="Imagen 1" class="bienvenida-img position-absolute" style="top: 0; left: 50px; opacity: 0; animation: fadeInMove 1s forwards 0.5s;">
+    <img src="Fotos/img12-2.png" alt="Imagen 2" class="bienvenida-img position-absolute" style="top: 40px; left: 80px; opacity: 0; animation: fadeInMove 1s forwards 1.5s;">
+    <img src="Fotos/img15-2.png" alt="Imagen 3" class="bienvenida-img position-absolute" style="top: 80px; left: 140px; opacity: 0; animation: fadeInMove 1s forwards 2.5s;">
+    <img src="Fotos/img13-2.png" alt="Imagen 4" class="bienvenida-img position-absolute" style="top: 0px; left: 140px; opacity: 0; animation: fadeInMove 1s forwards 3.5s;">
+    <img src="Fotos/img14-2.png" alt="Imagen 5" class="bienvenida-img position-absolute" style="top: 40px; left: 80px; opacity: 0; animation: fadeInMove 1s forwards 4.5s;">
+    <img src="Fotos/img18-2.png" alt="Imagen 6" class="bienvenida-img position-absolute" style="top: 0px; left: 20px; opacity: 0; animation: fadeInMove 1s forwards 5.5s;">
+  </div>
 
-      <!-- Botón de entrada -->
-      <div class="text-center entry">
-        <a href="#principal" id="btnEntrar" class="btn btn-light mt-4" style="opacity: 0; pointer-events: none; transition: opacity 1s;">
-          Entrar
-        </a>
-      </div>
+  <!-- Botón de entrada -->
+  <div class="text-center entry">
+    <a href="#principal" id="btnEntrar" class="btn btn-light mt-4" style="opacity: 0; pointer-events: none; transition: opacity 1s;">
+      Entrar
+    </a>
+  </div>
 
-    </section>
+</div>
 
-
-
-</section>
         <!-- Contenedor del slider con posición relativa -->
-<div class="container-fluid section-full section-alt text-center" id="principal">        
+<div class="container-fluid section-full section-alt text-center section-alt" id="principal">        
     <div class="slider-wrapper position-relative">
 
         <!-- Tu contador (centrado y por encima) -->
-        <div class="countdown-container">
+        <div class="countdown-container position-absolute w-100 text-center">
         <div id="countdown">
             <div class="countdown-time d-flex justify-content-center flex-wrap">
             <div class="time-segment">
@@ -88,18 +86,18 @@
         <img class="photo-slider img-fluid" src="Fotos/img10-2.png" alt="Foto 10">
       </div>
     </div>
-    <div class="container py-5">
+    <div class="container py-3">
     
       <!-- Encabezado -->
           
           <img class="name img-fluid" src="Fotos/name.png" alt="nombres">
           <p class="mb-0">¡Nos casamos! <br>
-          Viernes 31 de Octubre 2025 - 5:00 p.m.</p>
+          Viernes 31 de Octubre 2025 - 4:30 p.m.</p>
           <img class="name-icon img-fluid" src="Fotos/rings.png" alt="Anillo">
     </div>
     
       <!-- Mapa -->
-      <div class="container-fluid section-full section-alt text-center">
+      <div class="container-fluid section-full section-alt text-center section-alt">
         <img class="ubicacion-icon img-fluid" src="Fotos/ubicacion.png" alt="Ubicación">
         <h3 class="title">Ubicación</h3>
         <p class="mapa-text">Club Majadas, salón 1 y 2 - 27 avenida 6-40, zona 11<br>
@@ -114,34 +112,26 @@
       </div>
     
       <!-- RSVP -->
-      <div class="container-fluid section-full section-alt text-center">
+      <div class="container-fluid section-full section-alt text-center section-alt">
         <img class="rsvp-icon img-fluid" src="Fotos/formulario.png" alt="RSVP">
         <h3 class="title">Confirma tu asistencia</h3>
         <p class="rsvp-text">Por favor confirma tu asistencia antes del 15 de agosto de 2025, así podremos organizarnos mejor.<br>
           ¡Gracias!</p>
-        <form class="mx-auto w-100" style="max-width: 500px;">
-          <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre completo</label>
-            <input type="text" class="form-control" id="nombre" required>
+          <div class="ratio ratio-4x3" style="max-width: 900px; margin: auto;">
+            <iframe 
+              src="https://docs.google.com/forms/d/e/1FAIpQLSfKUfD_JE3OcSzWYnN6vhH12dYS5TFPi-u5BekmS0KuulzJ9A/viewform?embedded=true" 
+              width="100%" 
+              height="600" 
+              frameborder="0" 
+              marginheight="0" 
+              marginwidth="0">
+              Cargando…
+            </iframe>
           </div>
-          <div class="mb-3">
-            <label for="telefono" class="form-label">Número de Teléfono</label>
-            <input type="tel" class="form-control" id="telefono" placeholder="Número de teléfono" pattern="[0-9]{8}" maxlength="8" required>
-          </div>
-          <div class="mb-3">
-            <label for="asistencia" class="form-label">¿Asistirás?</label>
-            <select class="form-select" id="asistencia" required>
-              <option value="">Selecciona una opción</option>
-              <option value="Sí">Sí, asistiré</option>
-              <option value="No">No podré asistir</option>
-            </select>
-          </div>       
-          <button type="submit" class="btn btn-success">Enviar confirmación</button>
-        </form>
-      </div>
+        </div>
     
       <!-- Vestuario -->
-      <div class="container-fluid section-full section-alt text-center full-height">
+      <div class="container-fluid section-full section-alt text-center section-alt full-height">
         <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
             <img class="vestuario-icon img-fluid suit" src="Fotos/tux.png" alt="Traje">
             <img class="vestuario-icon img-fluid dress" src="Fotos/dress.png" alt="Vestido">
@@ -166,13 +156,55 @@
         </a>        
       </div>
     
-      <!-- Música -->
-      <div class="container-fluid section-full section-alt text-center full-height">
-        <img class="musica-icon img-fluid" src="Fotos/musica.png" alt="Música">
-        <h3 class="title">Sugiérenos una canción</h3>
-        <p class="mapa-text">Queremos que la música también tenga un pedacito de ti.<br>
-        <a href="" class="mapa-text">Sugiérenos tus canciones favoritas aquí</a></p>
-      </div>
+      <!-- Itinerario -->
+<div class="container-fluid section-full section-alt text-center">
+  <img class="rsvp-icon img-fluid" src="Fotos/reloj.png" alt="RSVP">
+  <h3 class="title mb-4">Itinerario</h3>
+
+  <div class="row justify-content-center">
+    
+    <!-- Evento 1 -->
+    <div class="col-12 col-md-4 mb-4">
+      <img src="Fotos/icono-boda.png" alt="Ceremonia" class="img-fluid mb-2" style="max-width: 80px;">
+      <h5 class="mb-1">Ceremonia</h5>
+      <p class="mb-0">5:00 p.m.</p>
+      <small>Club Majadas – Jardín</small>
+    </div>
+
+    <!-- Evento 2 -->
+    <div class="col-12 col-md-4 mb-4">
+      <img src="Fotos/icono-brindis.png" alt="Brindis" class="img-fluid mb-2" style="max-width: 80px;">
+      <h5 class="mb-1">Brindis y Recepción</h5>
+      <p class="mb-0">6:00 p.m.</p>
+      <small>Salón 1 y 2</small>
+    </div>
+
+    <!-- Evento 3 -->
+    <div class="col-12 col-md-4 mb-4">
+      <img src="Fotos/icono-cena.png" alt="Cena" class="img-fluid mb-2" style="max-width: 80px;">
+      <h5 class="mb-1">Cena</h5>
+      <p class="mb-0">7:00 p.m.</p>
+      <small>Salón 1 y 2</small>
+    </div>
+
+    <!-- Evento 4 -->
+    <div class="col-12 col-md-4 mb-4">
+      <img src="Fotos/icono-baile.png" alt="Baile" class="img-fluid mb-2" style="max-width: 80px;">
+      <h5 class="mb-1">Fiesta</h5>
+      <p class="mb-0">8:30 p.m.</p>
+      <small>Pista de baile</small>
+    </div>
+
+    <!-- Evento 5 -->
+    <div class="col-12 col-md-4 mb-4">
+      <img src="Fotos/icono-despedida.png" alt="Despedida" class="img-fluid mb-2" style="max-width: 80px;">
+      <h5 class="mb-1">Despedida</h5>
+      <p class="mb-0">10:00 p.m.</p>
+      <small></small>
+    </div>
+
+  </div>
+</div>
 
     <div class="audio-wrapper text-center mt-3">
         <img class="audio-icon img-fluid" src="Fotos/tocadiscos.png">

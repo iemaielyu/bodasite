@@ -331,8 +331,7 @@ margin-top: 15vh;
 .countdown-container {
 margin-top: 8%;
 width: 100%;
-left: 2%;
-transform: translateX(-76%);
+left: -25%;
 text-align: center;
 }
 

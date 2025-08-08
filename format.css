@@ -329,9 +329,9 @@ margin-top: 15vh;
 }
 
 .countdown-container {
-margin-top: 6%;
+margin-top: 8%;
 width: 100%;
-left: 50%;
+left: 0%;
 transform: translateX(-76%);
 text-align: center;
 }
@@ -372,7 +372,7 @@ padding-bottom: 0;
 }
 
 .btn-primary{
-    margin-left: 35%;
+    margin-left: 32%;
 }
 
 .btn-success{

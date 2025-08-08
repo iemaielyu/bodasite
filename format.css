@@ -15,8 +15,6 @@ scroll-behavior: smooth;
 }
 
 .full-height {
-height: 100vh;
-min-height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -57,10 +55,13 @@ text-align: center;
 
 /* Divide la página en bloques */
 .section-full {
-min-height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
+}
+
+.section-alt{
+    margin-top: 2vh;
 }
 
 /* Contador y slider de imagénes*/
@@ -194,7 +195,7 @@ line-height: 1.2;
 
 .title{
 text-align: center;
-margin-bottom: 3vh;
+margin-bottom: 1.5vh;
 }
 
 /*Mapa*/
@@ -327,10 +328,14 @@ height: auto !important;
 margin-top: 15vh;
 }
 
-.countdown-container{
+.countdown-container {
 margin-top: 6%;
-margin-left: 25%;
+width: 100%;
+left: 50%;
+transform: translateX(-76%);
+text-align: center;
 }
+
 
 .main-label{
 font-size: 3rem;
@@ -361,8 +366,9 @@ padding-bottom: 0;
 }
 
 .img-fluid{
-    width: 50%;
+    width: 55%;
     margin-left: 1%;
+    margin-top: 2%;
 }
 
 .btn-primary{
